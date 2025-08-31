@@ -1,0 +1,24 @@
+Multithreaded Sorting
+
+Sorting is a fundamental problem. A multithreaded sorting algorithm leverages concurrency by dividing an array into parts, sorting each part in parallel threads, and then merging them.
+
+Why Multithreading?
+
+Traditional sorting is sequential → O(n log n).
+
+Using threads, multiple cores can work simultaneously.
+
+Improves performance on large datasets.
+
+Demonstrates OS concepts like thread creation, synchronization, and merging results.
+
+Approach:
+
+Divide: Split the array into T parts (T = number of threads).
+
+Sort: Each thread sorts its chunk (e.g., using quicksort/merge sort).
+
+Merge: Combine the sorted chunks into the final sorted array.
+
+This is basically a parallel version of Merge Sort.
+
